@@ -20,3 +20,13 @@ Il a été développé en Python avec une logique simple et extensible.
 -Détection des égalités
 
 -Facile à modifier / améliorer
+
+
+  📦 Installation
+
+Clone le repo :
+git clone https://github.com/Suban97/morpion.git
+
+Installe les dépendances :
+pip install -r requirements.txt
+
