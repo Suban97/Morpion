@@ -1,0 +1,15 @@
+# environnement virtuel
+.venv/
+
+# cache Python
+__pycache__/
+*.pyc
+
+# build PyInstaller
+build/
+dist/
+version/
+*.exe
+
+# fichiers système Windows
+desktop.ini
