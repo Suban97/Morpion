@@ -10,18 +10,30 @@ def quit_buttons():
     sys.exit()
 
 
-# rect = (x, y, width, height)
-# action = fonction à appeler lors du clic sur le bouton
-# text = texte à afficher sur le bouton
 def draw_button(screen, events, rect, text, couleur, action):
-    font = pygame.font.SysFont(None, 50)
+    font = pygame.font.SysFont("georgia", 20, bold=True)
 
     rect = pygame.Rect(rect)
-    pygame.draw.rect(screen, couleur, rect)
+    
+    # Récupérer la position de la souris
+    mouse_pos = pygame.mouse.get_pos()
+    is_hovered = rect.collidepoint(mouse_pos)
+    
+    # Effet de survol : augmenter légèrement la luminosité
+    if is_hovered:
+        couleur_finale = tuple(min(int(c * 1.1), 255) for c in couleur)
+    else:
+        couleur_finale = couleur
+    
+    # Bouton principal avec bordure fine
+    pygame.draw.rect(screen, couleur_finale, rect)
+    pygame.draw.rect(screen, (200, 210, 220), rect, 1)  # Bordure fine
 
-    text_surface = font.render(text, True, (255,255,255))
+    # Texte blanc/clair
+    text_surface = font.render(text, True, (248, 248, 252))
     screen.blit(text_surface, text_surface.get_rect(center=rect.center))
 
+    # Gestion du clic
     for event in events:
         if event.type == pygame.MOUSEBUTTONDOWN:
             if rect.collidepoint(event.pos):
