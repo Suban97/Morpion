@@ -56,17 +56,18 @@ python Morpion.py
 ```
 Morpion/
 │
-├── src/
-│   ├── Morpion.py
-│   ├── requirements.txt
-│   └── engine/
-│       ├── ButtonManage.py
-│       ├── Grille.py
-│       └── Player.py
-│
-└── assets/
-    ├── Screenshot/
-    │   └── Screenshot Morpion.png
-    └── video/
-        └── GIF Morpion.gif
+└── src/
+    ├── Morpion.py
+    ├── requirements.txt
+    ├── engine/
+    │   ├── ButtonManage.py
+    │   ├── Grille.py
+    │   └── Player.py
+    │
+    │
+    └── assets/
+         ├── Screenshot/
+         │   └── Screenshot Morpion.png
+         └── video/
+             └── GIF Morpion.gif
 ```
