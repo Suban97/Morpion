@@ -1,57 +1,115 @@
-  # 🎮 Morpion (Tic-Tac-Toe) — Python
+# 🎮 Morpion (Tic-Tac-Toe) — Python
 
-Un jeu de Morpion développé en Python avec une interface Pygame simple et moderne.
+Un jeu de Morpion développé en Python avec une interface graphique réalisée avec Pygame.
 
 ## 🧠 Description
 
 Ce projet implémente une version locale du Morpion (Tic-Tac-Toe) pour deux joueurs sur PC.
-Le jeu propose une grille 3x3, une détection automatique des victoires et des égalités, ainsi que des actions pour rejouer ou quitter.
+
+Le jeu propose :
+- une grille 3×3 ;
+- une détection automatique des victoires ;
+- une détection des égalités ;
+- des boutons **Rejouer** et **Quitter**.
+
+---
 
 ## 🚀 Fonctionnalités
 
-- Mode 2 joueurs local
-- Interface graphique Pygame
-- Détection automatique du gagnant
-- Détection de l'égalité
-- Boutons `Rejouer` et `Quitter`
-- Logique de jeu simple et modulable
+- ✅ Mode 2 joueurs local
+- ✅ Interface graphique avec Pygame
+- ✅ Détection automatique du gagnant
+- ✅ Détection des égalités
+- ✅ Boutons *Rejouer* et *Quitter*
+- ✅ Code organisé en plusieurs modules
+
+---
 
 ## 📦 Installation
 
-1. Ouvrez un terminal dans le dossier `src`
-2. Installez les dépendances :
+Clonez le dépôt :
+
+```bash
+git clone https://github.com/Suban97/morpion.git
+cd morpion/src
+```
+
+Installez les dépendances :
 
 ```bash
 pip install -r requirements.txt
 ```
 
-> Si vous utilisez un environnement virtuel, activez-le d'abord avant l'installation.
+---
 
 ## ▶️ Lancer le jeu
-
-Dans le dossier `src`, exécutez :
 
 ```bash
 python Morpion.py
 ```
 
-## �️ Aperçu
+---
 
-![Screenshot du jeu](assets/Screenshot/Screenshot Morpion.png)
+## 📸 Capture d'écran
 
-![GIF du jeu](assets/video/GIF Morpion.gif)
+<p align="center">
+  <img src="assets/Screenshot/Screenshot%20Morpion.png" width="500">
+</p>
 
-## �📁 Structure du projet
+---
 
-- `Morpion.py` — point d'entrée du jeu et boucle principale
-- `engine/Grille.py` — gestion de la grille, affichage des cases et détection des clics
-- `engine/Player.py` — gestion des joueurs, du tour en cours et de la validation des victoires
-- `engine/ButtonManage.py` — gestion des boutons `Rejouer` et `Quitter`
-- `requirements.txt` — dépendances Python requises
+## 🎥 Démonstration
+
+<p align="center">
+  <img src="assets/video/GIF%20Morpion.gif" width="500">
+</p>
+
+---
+
+## 📹 Vidéo
+
+La vidéo complète est disponible ici :
+
+[▶ Voir la vidéo](assets/video/NOM_DE_TA_VIDEO.mp4)
+
+*(Remplace `NOM_DE_TA_VIDEO.mp4` par le nom réel de ton fichier.)*
+
+---
+
+## 📁 Structure du projet
+
+```
+Morpion/
+│
+├── src/
+│   ├── Morpion.py
+│   ├── requirements.txt
+│   └── engine/
+│       ├── ButtonManage.py
+│       ├── Grille.py
+│       └── Player.py
+│
+└── assets/
+    ├── Screenshot/
+    │   └── Screenshot Morpion.png
+    └── video/
+        ├── GIF Morpion.gif
+        └── demo.mp4
+```
+
+---
 
 ## 💡 Améliorations possibles
 
-- Ajouter un mode joueur contre IA
-- Proposer plusieurs thèmes de couleurs
-- Enregistrer et afficher le score des joueurs
-- Optimiser la gestion des égalités
+- 🤖 Ajouter une IA
+- 🎨 Ajouter plusieurs thèmes
+- 🏆 Ajouter un système de score
+- 🔊 Ajouter des effets sonores
+- 💾 Sauvegarder les statistiques
+
+---
+
+## 🛠️ Technologies utilisées
+
+- Python 3
+- Pygame
